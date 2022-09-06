@@ -134,9 +134,94 @@
 
 // */*/*/*/*/*/*/*/ FUNCION FLECHA-ARROW */*/*/*/*/*/*/*/
 
-const sumar = (a, b) => {
-    return a + b
-}
-sumar(58, 6)
+// const sumar = (a, b) => {
+//     return a + b
+// }
+// sumar(58, 6)
 
 // */*/*/*/*/*/*/*/ FUNCIONES ANONIMAS==>DOM==>DOCUMENT OBJECT MODEL */*/*/*/*/*/*/*/
+
+
+
+
+// --------********** EJERCICIO --------**********
+
+// const gritar = (mensaje) => {
+//     return `¡${mensaje}!`
+// }
+
+// console.log(gritar('hola'))
+// //¡hola!
+
+
+
+// --------********** EJERCICIO --------**********
+
+// const generarEmail = (nombre, dominio) => {
+//     return `${nombre}@${dominio}.com`
+// }
+
+// console.log(generarEmail('juan', 'gmail'))
+// //juan@gmail.com
+
+
+
+// --------********** EJERCICIO --------**********
+
+//puedeVerPelicula(12, false)
+//false
+//puedeVerPelicula(16, false)
+//true
+//puedeVerPelicula(18, true)
+//true
+
+// const puedeVerPelicula = (edad, autorizacion) => {
+//     return edad > 15 || autorizacion
+
+//     //ternario
+//     // return edad > 15 || autorizacion ? true : false
+
+//     // forma largar (debajo)
+//     // if (edad > 15 || autorizacion == true) {
+//     //     return true
+//     // }
+//     // else {
+//     //     return false
+//     // }
+
+// }
+
+// console.log(puedeVerPelicula(12, false))
+// console.log(puedeVerPelicula(16, false))
+// console.log(puedeVerPelicula(18, false))
+
+
+
+// // ******************************************** ACLARACION
+// let valor = false
+
+// if (valor) {
+//     console.log('segui')
+// } else {
+//     console.log('estas afuera')
+// }
+
+
+
+
+// --------********** EJERCICIO --------**********
+
+const esVocal = (a) => {
+    return (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u')
+
+    //forma larga
+    // if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
+    //     return true
+    // }
+    // else {
+    //     return false
+    // }
+}
+console.log(esVocal('a')) //true
+console.log(esVocal('p')) //false
+console.log(esVocal('o')) //true
