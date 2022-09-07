@@ -211,17 +211,49 @@
 
 // --------********** EJERCICIO --------**********
 
-const esVocal = (a) => {
-    return (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u')
+// const esVocal = (a) => {
+//     return (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u')
 
-    //forma larga
-    // if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
-    //     return true
-    // }
-    // else {
-    //     return false
-    // }
+//     //forma larga
+//     // if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
+//     //     return true
+//     // }
+//     // else {
+//     //     return false
+//     // }
+// }
+// console.log(esVocal('a')) //true
+// console.log(esVocal('p')) //false
+// console.log(esVocal('o')) //true
+
+
+
+
+// --------********** EJERCICIO --------**********
+//Define una funcion jugarPiedraPapelTijera que reciba como argunmentos dos string
+
+const jugarPiedraPapelTijera = (a, b) => {
+    if (a == 'tijera' && b == 'piedra' || a == 'piedra' && b == 'tijera')
+        return 'Gano Piedra'
+
+    // if (a == 'tijera' && b == 'piedra')
+    //     return 'Gano' + b
+
+    if (a == 'piedra' && b == 'piedra')
+        return 'Hubo Empate'
+
+    if (a == 'piedra' && b == 'papel')
+        return 'Gano' + b
+
+    // if (a == 'piedra' && b == 'tijera')
+    //     return 'Gano' + a
 }
-console.log(esVocal('a')) //true
-console.log(esVocal('p')) //false
-console.log(esVocal('o')) //true
+
+console.log(jugarPiedraPapelTijera('tijera', 'piedra'))
+//Gano Piedra
+console.log(jugarPiedraPapelTijera('piedra', 'piedra'))
+//Empate
+console.log(jugarPiedraPapelTijera('piedra', 'papel'))
+//Gano Papel
+console.log(jugarPiedraPapelTijera('piedra', 'tijera'))
+//Gano Piedra
